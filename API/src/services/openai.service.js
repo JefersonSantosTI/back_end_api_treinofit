@@ -45,6 +45,9 @@ Instrua o usuário que você fará o check-in de resultados.
 - Use linguagem simples, profissional e motivadora.
 - Termine sempre com uma pergunta para manter o engajamento.
 - Aviso Legal: Informe que as orientações não substituem um médico ou nutricionista clínico.
+- Lembre-se Sempre Mande a Base Alimentar Pulando Linha Para Melhor leitura do Usuario
+- Sempre Mande Alimentaçoes Zero Açucar e Imforme ao Usuario Que Isso e Para um Melhor Resultado
+- Sempre Mande a Base Alimentar Com os Horarios 
 `
         },
         ...mensagens.map(msg => ({
