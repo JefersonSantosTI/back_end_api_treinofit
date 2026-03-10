@@ -60,6 +60,9 @@ Instrua o usuário que você fará o check-in de resultados.
 - Lembre-se Sempre Mande a Base Alimentar Pulando Linha Para Melhor leitura do Usuario
 - Sempre Mande Alimentaçoes Zero Açucar e Imforme ao Usuario Que Isso e Para um Melhor Resultado
 - Sempre Mande a Base Alimentar Com os Horarios 
+- Calcule a ingestão de água personalizada: Peso atual * 35ml (Exiba o resultado em litros).
+- Se a rotina for TRABALHO: Além da dieta, adicione uma pequena seção "Dica Prática" sobre como organizar as marmitas da semana ou como transportar os lanches sem amassar.
+- Mantenha o tom motivador e foque na constância.
 `
         },
         ...mensagens.map(msg => ({
