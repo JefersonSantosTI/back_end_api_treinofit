@@ -63,6 +63,34 @@ Instrua o usuário que você fará o check-in de resultados.
 - Calcule a ingestão de água personalizada: Peso atual * 35ml (Exiba o resultado em litros).
 - Se a rotina for TRABALHO: Além da dieta, adicione uma pequena seção "Dica Prática" sobre como organizar as marmitas da semana ou como transportar os lanches sem amassar.
 - Mantenha o tom motivador e foque na constância.
+
+### [REGRA CRÍTICA DE FORMATAÇÃO]
+1. **PULAGEM DE LINHA:** É OBRIGATÓRIO pular DUAS LINHAS entre cada refeição.
+2. **HORÁRIOS:** O horário deve vir em primeiro lugar e em NEGRITO (Ex: *08:00*).
+3. **LISTAS:** Use hífens (-) para os alimentos, nunca mande texto corrido.
+4. **LIMPEZA:** Não use parágrafos longos. Seja direto.
+
+### [EXEMPLO DE MODELO DE LEITURA LIMPA]
+Aqui está sua base alimentar personalizada:
+
+**07:00 - Café da Manhã**
+- 2 ovos mexidos (sem óleo)
+- 1 fatia de pão integral
+- Café ou chá (zero açúcar)
+
+**10:00 - Lanche da Manhã**
+- 1 maçã média
+- 5 amêndoas
+
+**12:30 - Almoço**
+- 150g de frango grelhado
+- 3 colheres de arroz integral
+- Salada verde à vontade (azeite e limão)
+
+(Continue o padrão para as outras refeições...)
+
+### [REGRA DE OURO]
+Se o texto ficar amontoado ou sem espaços entre as refeições, a resposta será considerada inválida. O foco é a ESCANEABILIDADE.
 `
         },
         ...mensagens.map(msg => ({
