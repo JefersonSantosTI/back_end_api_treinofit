@@ -1,5 +1,5 @@
 import obterRespostaReceitas from '../services/openai.service.js';
-import Usuario from "./Usuario.js";// Importe o modelo que criamos
+import Usuario from "../usuario.js"
 
 export const perguntaReceita = async (req, res) => {
     try {
@@ -44,5 +44,7 @@ export const perguntaReceita = async (req, res) => {
         });
     }
 };
+
+ 
 
  
