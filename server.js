@@ -3,6 +3,24 @@ import receitasRoutes from './src/routes/receitas.route.js'
 import cors from 'cors'
 import dotenv from 'dotenv'
 
+const mongoose = require("mongoose");
+
+mongoose.connect(process.env.MONGO_URI)
+.then(() => {
+  console.log("MongoDB conectado");
+})
+.catch((err) => {
+  console.log("Erro ao conectar:", err);
+});
+
+
+import mongoose from 'mongoose';
+
+// Conexão com o MongoDB
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("✅ Conectado ao MongoDB com sucesso!"))
+  .catch((err) => console.error("❌ Erro ao conectar ao MongoDB:", err));
+
 dotenv.config()
 
 const app = express()
