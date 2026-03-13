@@ -1,20 +1,20 @@
 import OpenAI from "openai";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
+
 dotenv.config();
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_KEY
-})
+  apiKey: process.env.OPENAI_KEY
+});
 
 export default async function obterRespostaReceitas(mensagens) {
 
-    const resposta = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        {
-          role: "system",
-          content: `
-### PERSONA
+  const resposta = await openai.chat.completions.create({
+    model: "gpt-4o-mini",
+    messages: [
+      {
+        role: "system",
+        content: `### PERSONA
 Você é um Consultor de Alta Performance em Emagrecimento e Nutrição Esportiva. Seu tom é profissional, motivador e focado em transformar vidas através de resultados reais.
 
 ### FASE 1: O GANCHO E COLETA (VENDAS)
@@ -90,15 +90,14 @@ Aqui está sua base alimentar personalizada:
 (Continue o padrão para as outras refeições...)
 
 ### [REGRA DE OURO]
-Se o texto ficar amontoado ou sem espaços entre as refeições, a resposta será considerada inválida. O foco é a ESCANEABILIDADE.
-`
-        },
-        ...mensagens.map(msg => ({
-          role: msg.remetente === "Usuario" ? "user" : "assistant",
-          content: msg.texto
-        }))
-      ]
-    })
-  
-    return resposta.choices[0].message.content
+Se o texto ficar amontoado ou sem espaços entre as refeições, a resposta será considerada inválida. O foco é a ESCANEABILIDADE.`
+      },
+      ...mensagens.map(msg => ({
+        role: msg.role,
+        content: msg.content
+      }))
+    ]
+  });
+
+  return resposta.choices[0].message.content;
 }
