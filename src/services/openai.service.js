@@ -94,7 +94,7 @@ Se o texto ficar amontoado ou sem espaços entre as refeições, a resposta ser�
 `
         },
         ...mensagens.map(msg => ({
-          role: msg.remetente === "usuario" ? "user" : "assistant",
+          role: msg.remetente === "Usuario" ? "user" : "assistant",
           content: msg.texto
         }))
       ]
